@@ -1,41 +1,28 @@
 package hello.hellospring.service;
 
 import hello.hellospring.domain.Member;
-
-
-import hello.hellospring.repository.MemoryMemberRepository;
+import hello.hellospring.repository.MemberRepository;
 import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.fail;
-import static org.springframework.test.web.servlet.result.StatusResultMatchersExtensionsKt.isEqualTo;
 
-
-class MemberServiceTest {
+@SpringBootTest
+@Transactional
+class MemberServiceintegrationTest {
+    @Autowired
     MemberService memberService;
-    MemoryMemberRepository memberRepository;
-
-    //각 테스트 실행 전에 호출된다. 테스트가 서로 영향이 없도록 항상 새로운 객체를 생성하고,
-    //의존관계도 새로 맺어준다
-    @BeforeEach
-    public void beforeEach(){ //같은 메모리 레로지터리가 사용됨
-        memberRepository = new MemoryMemberRepository();
-        memberService = new MemberService(memberRepository);
-    }
-    @AfterEach
-    public void afterEach(){
-        memberRepository.clearStore();
-    }
+    @Autowired
+    MemberRepository memberRepository;
 
     @Test
     void 회원가입() {
         //given
         Member member = new Member();
-        member.setName("hello");
+        member.setName("spring");
 
         //when
         Long saveId = memberService.join(member);

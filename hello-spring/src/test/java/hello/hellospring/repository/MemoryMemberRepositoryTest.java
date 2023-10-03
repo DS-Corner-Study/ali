@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.*;
 class MemoryMemberRepositoryTest {
 
     MemoryMemberRepository repositry = new MemoryMemberRepository();
-    @AfterEach
+    @AfterEach //작동될 때마다 디비의 내용을 삭제해 한번에 테스트 가능
     public void afterEach(){
         repositry.clearStore();
     }
