@@ -1,7 +1,12 @@
 package hello.hellospring.domain;
 
+import jakarta.persistence.*;
+
+@Entity
+//회원 객체를 만들기
 public class Member {
 
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
 
