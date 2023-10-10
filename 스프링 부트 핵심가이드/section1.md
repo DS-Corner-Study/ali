@@ -8,19 +8,48 @@
   따라서 의존성 주입, 관점 지향 프로그래밍 가능
   
 #### 2. 의존성 주입
-  - 시용할 객체를 직접 생성하지 않고 외부 컨테이너가 생성한 객체를 주입받아 사용하는 방식
+  - 이용할 객체를 직접 생성하지 않고 외부 컨테이너가 생성한 객체를 주입받아 사용하는 방식
   
     <의존성을 주입받는 방법>
     
     - 생성자를 통한 의존성 주입
+      ````
+      @RestController
+      public class DIOController{
+      
+          MyService myService;
+          @Autowired
+          public DIOController(MyService myService){
+              this.myService.gethello();
+        }
+      }
+      ````
     
     - 필드 객체 선언을 통한 의존성 주입
+
+      ````
+      @RestController
+      public class FieldInjectionController{
+        
+          @Autowired
+          private MyService myService;
+      }
+      ````
     
     - setter 매서드를 통한 의존성 주입
+       ````
+      @RestController
+      public class SetterInjectionController{
+        
+          @Autowired
+          public void setMyService(MyService myService){
+              this.myService = myService;
+      }
+      ````
 
     @Autowired라는 어노테이션을 통해 의존성 주입 가능(위 세 곳에 각각 붙이기 가능)
 
-### 3. 관점지향 프로그래밍(AOP)
+#### 3. 관점지향 프로그래밍(AOP)
   - 관점을 기준으로 묶어 개발하는 방식(핵심기능, 부가기능)
 
     <AOP 구현 방법>
@@ -67,8 +96,8 @@
 
           - @Configuration
 
-  4. 내장 AWS 존재
+  3. 내장 AWS 존재
 
-  5. 모니터링
+  4. 모니터링
 
      서비스 운영 시기에 해당 시스템이 사용하는 스레드, 메모리, 세션 등의 주요 요소들을 모니터링 해야함(스프링 부트 액추에이터 이용)
