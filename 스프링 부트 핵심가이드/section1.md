@@ -13,10 +13,39 @@
     <의존성을 주입받는 방법>
     
     - 생성자를 통한 의존성 주입
+      ````
+      @RestController
+      public class DIOController{
+      
+          MyService myService;
+          @Autowired
+          public DIOController(MyService myService){
+              this.myService.gethello();
+        }
+      }
+      ````
     
     - 필드 객체 선언을 통한 의존성 주입
+
+      ````
+      @RestController
+      public class FieldInjectionController{
+        
+          @Autowired
+          private MyService myService;
+      }
+      ````
     
     - setter 매서드를 통한 의존성 주입
+       ````
+      @RestController
+      public class SetterInjectionController{
+        
+          @Autowired
+          public void setMyService(MyService myService){
+              this.myService = myService;
+      }
+      ````
 
     @Autowired라는 어노테이션을 통해 의존성 주입 가능(위 세 곳에 각각 붙이기 가능)
 
