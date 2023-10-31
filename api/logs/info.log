@@ -1,0 +1,92 @@
+[2023-10-30 20:22:04.512] [INFO ] [main] com.springboot.api.ApiApplication Starting ApiApplication using Java 20.0.1 on DESKTOP-K7BAU1P with PID 19156 (C:\CornerStudy\api\target\classes started by user in C:\CornerStudy\api)
+[2023-10-30 20:22:04.514] [INFO ] [main] com.springboot.api.ApiApplication No active profile set, falling back to default profiles: default
+[2023-10-30 20:22:05.606] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+[2023-10-30 20:22:05.616] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2023-10-30 20:22:05.616] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-10-30 20:22:05.617] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-10-30 20:22:05.712] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-10-30 20:22:05.712] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1152 ms
+[2023-10-30 20:22:06.126] [INFO ] [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-10-30 20:22:06.293] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2023-10-30 20:22:06.331] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+[2023-10-30 20:22:06.332] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-10-30 20:22:06.350] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-10-30 20:22:06.373] [INFO ] [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-10-30 20:22:06.388] [INFO ] [main] com.springboot.api.ApiApplication Started ApiApplication in 2.344 seconds (JVM running for 2.748)
+[2023-10-30 20:23:33.217] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-10-30 20:23:33.218] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-10-30 20:23:33.220] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 2 ms
+[2023-10-30 20:27:43.688] [INFO ] [main] com.springboot.api.ApiApplication Starting ApiApplication using Java 20.0.1 on DESKTOP-K7BAU1P with PID 10584 (C:\CornerStudy\api\target\classes started by user in C:\CornerStudy\api)
+[2023-10-30 20:27:43.691] [INFO ] [main] com.springboot.api.ApiApplication No active profile set, falling back to default profiles: default
+[2023-10-30 20:27:44.828] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+[2023-10-30 20:27:44.844] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2023-10-30 20:27:44.844] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-10-30 20:27:44.844] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-10-30 20:27:44.968] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-10-30 20:27:44.968] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1236 ms
+[2023-10-30 20:27:45.350] [INFO ] [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-10-30 20:27:45.538] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2023-10-30 20:27:45.587] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+[2023-10-30 20:27:45.588] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-10-30 20:27:45.605] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-10-30 20:27:45.625] [INFO ] [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-10-30 20:27:45.641] [INFO ] [main] com.springboot.api.ApiApplication Started ApiApplication in 2.42 seconds (JVM running for 2.853)
+[2023-10-30 20:27:45.959] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-10-30 20:27:45.959] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-10-30 20:27:45.960] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2023-10-30 20:29:44.582] [INFO ] [main] com.springboot.api.ApiApplication Starting ApiApplication using Java 20.0.1 on DESKTOP-K7BAU1P with PID 25604 (C:\CornerStudy\api\target\classes started by user in C:\CornerStudy\api)
+[2023-10-30 20:29:44.585] [INFO ] [main] com.springboot.api.ApiApplication No active profile set, falling back to default profiles: default
+[2023-10-30 20:29:45.719] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+[2023-10-30 20:29:45.728] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2023-10-30 20:29:45.730] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-10-30 20:29:45.730] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-10-30 20:29:45.816] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-10-30 20:29:45.816] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1182 ms
+[2023-10-30 20:29:46.218] [INFO ] [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-10-30 20:29:46.377] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2023-10-30 20:29:46.422] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+[2023-10-30 20:29:46.424] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-10-30 20:29:46.442] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-10-30 20:29:46.463] [INFO ] [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-10-30 20:29:46.472] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-10-30 20:29:46.473] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-10-30 20:29:46.473] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 0 ms
+[2023-10-30 20:29:46.698] [INFO ] [main] com.springboot.api.ApiApplication Started ApiApplication in 2.578 seconds (JVM running for 2.994)
+[2023-10-30 20:42:51.857] [INFO ] [main] com.springboot.api.ApiApplication Starting ApiApplication using Java 20.0.1 on DESKTOP-K7BAU1P with PID 4652 (C:\CornerStudy\api\target\classes started by user in C:\CornerStudy\api)
+[2023-10-30 20:42:51.859] [INFO ] [main] com.springboot.api.ApiApplication No active profile set, falling back to default profiles: default
+[2023-10-30 20:42:52.932] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+[2023-10-30 20:42:52.943] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2023-10-30 20:42:52.943] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-10-30 20:42:52.943] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-10-30 20:42:53.047] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-10-30 20:42:53.047] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1150 ms
+[2023-10-30 20:42:53.539] [INFO ] [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-10-30 20:42:53.728] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2023-10-30 20:42:53.783] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+[2023-10-30 20:42:53.783] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-10-30 20:42:53.804] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-10-30 20:42:53.830] [INFO ] [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-10-30 20:42:53.978] [INFO ] [main] com.springboot.api.ApiApplication Started ApiApplication in 2.588 seconds (JVM running for 3.037)
+[2023-10-30 20:43:00.943] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-10-30 20:43:00.943] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-10-30 20:43:00.944] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2023-10-30 20:43:16.414] [INFO ] [http-nio-8080-exec-9] com.springboot.api.controller.GetController getHello 메서드가 호출되었습니다
+[2023-10-30 20:44:36.972] [INFO ] [main] com.springboot.api.ApiApplication Starting ApiApplication using Java 20.0.1 on DESKTOP-K7BAU1P with PID 28308 (C:\CornerStudy\api\target\classes started by user in C:\CornerStudy\api)
+[2023-10-30 20:44:36.974] [INFO ] [main] com.springboot.api.ApiApplication No active profile set, falling back to default profiles: default
+[2023-10-30 20:44:38.062] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+[2023-10-30 20:44:38.072] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2023-10-30 20:44:38.073] [INFO ] [main] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2023-10-30 20:44:38.073] [INFO ] [main] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2023-10-30 20:44:38.166] [INFO ] [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2023-10-30 20:44:38.166] [INFO ] [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1148 ms
+[2023-10-30 20:44:38.614] [INFO ] [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-10-30 20:44:38.775] [INFO ] [main] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2023-10-30 20:44:38.819] [INFO ] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+[2023-10-30 20:44:38.820] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-10-30 20:44:38.839] [INFO ] [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-10-30 20:44:38.863] [INFO ] [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-10-30 20:44:39.016] [INFO ] [main] com.springboot.api.ApiApplication Started ApiApplication in 2.472 seconds (JVM running for 2.859)
+[2023-10-30 20:44:51.723] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-10-30 20:44:51.723] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2023-10-30 20:44:51.724] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2023-10-30 20:44:51.770] [INFO ] [http-nio-8080-exec-1] com.springboot.api.controller.GetController @PathVariable로 들어온 값:seojin
