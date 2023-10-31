@@ -1,5 +1,5 @@
 # 컨트롤러 클래스 설정
--어노테이션
+- 어노테이션
 
 1. @RestController
 2. @RequestMapping("/api/v1/get-api")
