@@ -96,7 +96,7 @@
 
           - @Configuration
 
-  3. 내장 AWS 존재
+  3. 내장 WAS 존재
 
   4. 모니터링
 
