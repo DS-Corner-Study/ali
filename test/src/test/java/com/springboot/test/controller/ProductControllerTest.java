@@ -15,6 +15,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -56,15 +57,15 @@ public class ProductControllerTest {
 
         ProductDto productDto = ProductDto.builder()
                         .name("pen")
-                                .price(5000)
-                                        .stock(2000)
-                                                .build();
+                        .price(5000)
+                        .stock(2000)
+                        .build();
         Gson gson = new Gson();
         String content = gson.toJson(productDto);
 
 
         mockMvc.perform(
-                        get("/product")
+                        post("/product")
                                 .content(content)
                                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
@@ -75,6 +76,6 @@ public class ProductControllerTest {
                 .andExpect(jsonPath("$.stock").exists())
                 .andDo(print());
 
-        verify(productService).getProduct(123L);
+        verify(productService).saveProduct(new ProductDto("pen", 5000, 2000));
     }
 }
