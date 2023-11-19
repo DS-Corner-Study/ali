@@ -29,7 +29,7 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 <<<<<<< HEAD
-src/main/resources/
+**/src/main/resources/application.properties
 =======
 
 >>>>>>> 2d345fa3019c4bc82751c31f31055afb5e585728
