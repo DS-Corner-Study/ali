@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/product")
-public class ProductCotroller {
+public class ProductController {
     private final ProductService productService;
 
     @Autowired
-    public ProductCotroller(ProductService productService){
+    public ProductController(ProductService productService){
         this.productService=productService;
     }
 
