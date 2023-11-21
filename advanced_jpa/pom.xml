@@ -12,11 +12,11 @@
 	</parent>
 
 	<groupId>com.springboot</groupId>
-	<artifactId>test</artifactId>
+	<artifactId>jpa</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>test</name>
-	<description>chapter7_test</description>
+	<name>advanced_jpa</name>
+	<description>chapter8_advanced_jpa</description>
 
 	<properties>
 		<java.version>11</java.version>
@@ -58,7 +58,7 @@
 			<version>2.9.2</version>
 		</dependency>
 
-		<!-- QueryDSL을 사용하기 위한 디펜던시 추가 -->
+		<!-- QueryDSL을 사용하기 위한 디펜던시 추가 (예제 8.24) -->
 		<dependency>
 			<groupId>com.querydsl</groupId>
 			<artifactId>querydsl-apt</artifactId>
@@ -70,41 +70,17 @@
 			<artifactId>querydsl-jpa</artifactId>
 		</dependency>
 
-		<!-- 예제 7.10 -->
-		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
-		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-		</dependency>
-
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
 
-		<!-- 예제 7.14 -->
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>test</scope>
-		</dependency>
-
-		<!--예제 7.3-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<!-- 예제 7.19 -->
-		<!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
-		<dependency>
-			<groupId>org.jacoco</groupId>
-			<artifactId>jacoco-maven-plugin</artifactId>
-			<version>0.8.7</version>
-		</dependency>
-
 	</dependencies>
 
 	<build>
@@ -121,58 +97,23 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			<!-- 예제 7.20 -->
+
+			<!-- QueryDSL을 사용하기 위한 플러그인 추가 (예제 8.25) -->
 			<plugin>
-				<groupId>org.jacoco</groupId>
-				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.8.7</version>
-				<!-- 예제 7.21 -->
-				<configuration>
-					<excludes>
-						<exclude>**/ProductServiceImpl.class</exclude>
-					</excludes>
-				</configuration>
+				<groupId>com.mysema.maven</groupId>
+				<artifactId>apt-maven-plugin</artifactId>
+				<version>1.1.3</version>
 				<executions>
-					<!-- 예제 7.22 -->
 					<execution>
 						<goals>
-							<goal>prepare-agent</goal>
+							<goal>process</goal>
 						</goals>
-					</execution>
-					<execution>
-						<id>jacoco-report</id>
-						<phase>test</phase>
-						<goals>
-							<goal>report</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>jacoco-check</id>
-						<goals>
-							<goal>check</goal>
-						</goals>
-						<!-- 예제 7.23 -->
 						<configuration>
-							<rules>
-								<rule>
-									<element>BUNDLE</element>
-									<limits>
-										<limit>
-											<counter>INSTRUCTION</counter>
-											<value>COVEREDRATIO</value>
-											<minimum>0.80</minimum>
-										</limit>
-									</limits>
-									<element>METHOD</element>
-									<limits>
-										<limit>
-											<counter>LINE</counter>
-											<value>TOTALCOUNT</value>
-											<maximum>50</maximum>
-										</limit>
-									</limits>
-								</rule>
-							</rules>
+							<outputDirectory>target/generated-sources/java</outputDirectory>
+							<processor>com.querydsl.apt.jpa.JPAAnnotationProcessor</processor>
+							<options>
+								<querydsl.entityAccessors>true</querydsl.entityAccessors>
+							</options>
 						</configuration>
 					</execution>
 				</executions>

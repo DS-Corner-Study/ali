@@ -21,12 +21,12 @@ public class ProductRepositoryTestByH2 {
         product.setStock(1000);
 
         //when
-        Product saveProduct = productRepository.save(product);
+        Product savedProduct = productRepository.save(product);
 
         //then
-        assertEquals(product.getName(), saveProduct.getName());
-        assertEquals(product.getPrice(), saveProduct.getPrice());
-        assertEquals(product.getStock(), saveProduct.getStock());
+        assertEquals(product.getName(), savedProduct.getName());
+        assertEquals(product.getPrice(), savedProduct.getPrice());
+        assertEquals(product.getStock(), savedProduct.getStock());
     }
 
     @Test
